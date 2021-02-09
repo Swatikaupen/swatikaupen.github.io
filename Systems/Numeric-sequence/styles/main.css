@@ -1,0 +1,55 @@
+body {
+  background: #f4e49c;
+  display: block;
+  margin: 0;
+  height: 100vh;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #312783;
+  pointer-events: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1, svg {
+  position: absolute;
+  width: 100px;
+  top: 20%;
+  left: 55%;
+}
+
+h1 {
+  margin: 150px 0 0 -125px;
+  height: 200px;
+  font-family: Helvetica-Regular;
+  font-weight: lighter;
+  font-size: 25px;
+  letter-spacing: 3px;
+  line-height: 200px;
+  text-align: center;
+  z-index: 100;
+}
+
+
+svg {
+  margin: 0px 0 0 -125px;
+}
+
+svg #shape polygon {
+  fill: #312783;
+  opacity: 0.05;
+  -webkit-transition: all 0.30s ease;
+  transition: all 0.30s ease;
+}
+
+svg #shape polygon.active {
+  opacity: 1;
+}
+
+svg>polygon {
+  fill: #dadada;
+}

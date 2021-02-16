@@ -59,7 +59,7 @@ let legend = {
 ",": "00000000001",
 " ": "00000000011"
 };
-var frequency=3e3, elements = document.getElementById("shape").getElementsByTagName("*"), counter = 0, sequence=[];
+var frequency=2e3, elements = document.getElementById("shape").getElementsByTagName("*"), counter = 0, sequence=[];
 
 window.onload = function() {
   var input = "This is my message..";

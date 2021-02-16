@@ -1,7 +1,14 @@
 "use strict";
 
 function clearActive() {
-    for (var a in elements) for (var b in elements[a].classList) "active" === elements[a].classList[b] && elements[a].classList.remove("active");
+	if (oddcount == true) {
+		oddcount = false;
+		for (var a in elements) for (var b in elements[a].classList)  elements[a].classList.remove("odd");
+	}  else {
+    oddcount = true;
+		for (var a in elements) for (var b in elements[a].classList)  elements[a].classList.add("odd");
+	}
+  for (var a in elements) for (var b in elements[a].classList) "active" === elements[a].classList[b] && elements[a].classList.remove("active");
 }
 
 function addActive(a) {
@@ -20,7 +27,7 @@ function stepSequence() {
     counter++;
     setTimeout(stepSequence, frequency);
 }
-
+var oddcount=false;
 let legend = {
 "a": "00000000100",
 "b": "00000001000",
@@ -55,7 +62,7 @@ let legend = {
 var frequency=3e3, elements = document.getElementById("shape").getElementsByTagName("*"), counter = 0, sequence=[];
 
 window.onload = function() {
-  var input = "What are you doing. ";
+  var input = "This is my message..";
   input = input.toLowerCase();
   for (var i=0; i<input.length; i++) sequence.push(legend[input[i]]);
   console.log(sequence);

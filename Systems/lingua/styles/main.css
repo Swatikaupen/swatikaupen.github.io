@@ -58,3 +58,13 @@ svg #shape polygon.active {
 svg>polygon {
   fill: #dadada;
 }
+
+svg #shape polygon.odd {
+  fill: #179a21;
+  opacity: 0.05;
+  -webkit-transition: all 0.30s ease;
+  transition: all 0.30s ease;
+}
+svg #shape polygon.active.odd {
+  opacity: 1;
+}

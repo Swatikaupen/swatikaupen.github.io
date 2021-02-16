@@ -1,0 +1,60 @@
+body {
+  background: #000000;
+  display: block;
+  margin: 0;
+  height: 100vh;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+h2 {
+  text-align: center;
+  font-family: roboto-regular;
+}
+
+h1, svg {
+  position: absolute;
+  width: 300px;
+  top: 20%;
+  left: 46%;
+}
+
+h1 {
+  margin: 150px 0 0 -800px;
+  height: 200px;
+  font-family: helvetica-regular;
+  font-weight: lighter;
+  font-size: 0px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+
+svg {
+  margin: 0px 0 0 -90px;
+}
+
+svg #shape polygon {
+  fill: #BA2920;
+  opacity: 0;
+  -webkit-transition: all 0.30s ease;
+  transition: all 0.30s ease;
+
+}
+
+svg path {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+svg #shape polygon.active {
+  opacity: 1;
+}
+
+svg>polygon {
+  fill: #dadada;
+}

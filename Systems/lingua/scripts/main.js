@@ -1,14 +1,14 @@
 "use strict";
 
 function clearActive() {
-	if (oddcount == true) {
-		oddcount = false;
-		for (var a in elements) for (var b in elements[a].classList)  elements[a].classList.remove("odd");
-	}  else {
-    oddcount = true;
-		for (var a in elements) for (var b in elements[a].classList)  elements[a].classList.add("odd");
-	}
-  for (var a in elements) for (var b in elements[a].classList) "active" === elements[a].classList[b] && elements[a].classList.remove("active");
+    if (oddcount == true) {
+        oddcount = false;
+        for (var a in elements) for (var b in elements[a].classList)  elements[a].classList.remove("odd");
+    } else {
+        oddcount = true;
+        for (var a in elements) for (var b in elements[a].classList)  elements[a].classList.add("odd");
+    }
+    for (var a in elements) for (var b in elements[a].classList) "active" === elements[a].classList[b] && elements[a].classList.remove("active");
 }
 
 function addActive(a) {

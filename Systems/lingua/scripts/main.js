@@ -28,7 +28,7 @@ function stepSequence() {
     setTimeout(stepSequence, frequency);
 }
 var oddcount=false;
-let legend = {
+var legend = {
 "a": "00000000100",
 "b": "00000001000",
 "c": "00000010000",
